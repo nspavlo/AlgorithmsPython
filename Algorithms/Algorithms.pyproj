@@ -5,7 +5,7 @@
     <ProjectGuid>b4b9eaab-d291-40dc-8ce5-e1eaafbef35f</ProjectGuid>
     <ProjectHome>
     </ProjectHome>
-    <StartupFile>RomanToInteger.py</StartupFile>
+    <StartupFile>Leetcode\RomanToInteger.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -25,11 +25,14 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="RomanToInteger.py" />
-    <Compile Include="PalindromeNumber.py" />
-    <Compile Include="ReverseInteger.py" />
-    <Compile Include="TwoSum.py" />
-    <Compile Include="AddTwoNumbers.py" />
+    <Compile Include="Leetcode\RomanToInteger.py" />
+    <Compile Include="Leetcode\PalindromeNumber.py" />
+    <Compile Include="Leetcode\ReverseInteger.py" />
+    <Compile Include="Leetcode\TwoSum.py" />
+    <Compile Include="Leetcode\AddTwoNumbers.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Leetcode\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
