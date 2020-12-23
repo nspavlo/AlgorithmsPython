@@ -1,7 +1,5 @@
 class Solution:
     def reverse(self, x: int) -> int:
-        isNegative = x < 0
-
         i = str(abs(x))
         j = int(i[::-1])
 
@@ -9,7 +7,7 @@ class Solution:
         if j > 0x7FFFFFFF:
             return 0
 
-        if isNegative:
+        if x < 0:
             return j * -1
         else:
             return j
