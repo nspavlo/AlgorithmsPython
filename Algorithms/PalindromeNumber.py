@@ -16,9 +16,21 @@ class Solution:
         return reverseNumber == x
 
 
-# given
-x = [121, -121, 10, -101, 101, 10000000000001, 0]
+import unittest
 
-# debug
-for i in range(len(x)):
-    print(x[i], Solution().isPalindrome(x[i]))
+class TestIsPalindrome(unittest.TestCase):
+    def test_oneHundredAndTwentyOne(self):
+        sut = Solution().isPalindrome(121)
+        self.assertEqual(sut, True)
+
+    def test_negative(self):
+        sut = Solution().isPalindrome(-121)
+        self.assertEqual(sut, False)
+
+    def test_ten(self):
+        sut = Solution().isPalindrome(10)
+        self.assertEqual(sut, False)
+
+    def test_zero(self):
+        sut = Solution().isPalindrome(0)
+        self.assertEqual(sut, True)

@@ -3,8 +3,8 @@ class ListNode:
         self.val = val
         self.next = next
 
-    def __repr__(self):
-        return "<ListNode value:%s next:\n |%s>" % (self.val, self.next)
+    def __eq__(self, other):
+        return self.val == other.val and self.next == other.next    
 
 class LinkedList:
     def __init__(self):    
@@ -51,9 +51,21 @@ class Solution:
         return trace.head
 
 
-# given
-l1 = ListNode(9, ListNode(9, ListNode(9, ListNode(9, ListNode(9, ListNode(9))))))
-l2 = ListNode(9, ListNode(9, ListNode(9)))
+import unittest
 
-# debug 
-print(Solution().addTwoNumbers(l1, l2))
+class TestAddTwoNumbers(unittest.TestCase):
+    def test_simpleNodes(self):
+        l1 = ListNode(2, ListNode(4, ListNode(3)))
+        l2 = ListNode(5, ListNode(6, ListNode(4)))
+        l3 = ListNode(7, ListNode(0, ListNode(8)))
+
+        sut = Solution().addTwoNumbers(l1, l2)
+        self.assertEqual(sut, l3)
+
+    def test_complexNodes(self):
+        l1 = ListNode(9, ListNode(9, ListNode(9, ListNode(9, ListNode(9, ListNode(9, ListNode(9)))))))
+        l2 = ListNode(9, ListNode(9, ListNode(9, ListNode(9))))
+        l3 = ListNode(8, ListNode(9, ListNode(9, ListNode(9, ListNode(0, ListNode(0, ListNode(0, ListNode(1))))))))
+        
+        sut = Solution().addTwoNumbers(l1, l2)
+        self.assertEqual(sut, l3)

@@ -6,9 +6,13 @@ class Solution:
                     return [i, j]
 
 
-# given
-nums = [2, 6, 3, 1]
-target = 9
+import unittest
 
-# debug
-print(Solution().twoSum(nums, target))
+class TestTwoSum(unittest.TestCase):
+    def test_nine(self):
+        sut = Solution().reverse([2, 7, 11, 15], 9)
+        self.assertEqual(sut, [0, 1])
+
+    def test_six(self):
+        sut = Solution().reverse([3, 2, 4], 6)
+        self.assertEqual(sut, [1, 2])

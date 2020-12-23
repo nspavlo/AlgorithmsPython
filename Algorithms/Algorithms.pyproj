@@ -12,6 +12,9 @@
     <OutputPath>.</OutputPath>
     <Name>Algorithms</Name>
     <RootNamespace>AlgorithmsPython</RootNamespace>
+    <TestFramework>unittest</TestFramework>
+    <UnitTestPattern>*.py</UnitTestPattern>
+    <UnitTestRootDirectory>.</UnitTestRootDirectory>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>

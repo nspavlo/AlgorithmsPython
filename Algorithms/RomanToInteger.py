@@ -30,9 +30,25 @@ class Solution:
         return otp
 
 
-# given
-x = ["III", "IV", "IX", "LVIII", "MCMXCIV"]
+import unittest
 
-# debug
-for i in range(len(x)):
-    print(x[i], Solution().romanToInt(x[i]))
+class TestRomanToInt(unittest.TestCase):
+    def test_three(self):
+        sut = Solution().romanToInt("III")
+        self.assertEqual(sut, 3)
+
+    def test_four(self):
+        sut = Solution().romanToInt("IV")
+        self.assertEqual(sut, 4)
+
+    def test_nine(self):
+        sut = Solution().romanToInt("IX")
+        self.assertEqual(sut, 9)
+
+    def test_fiftyEight(self):
+        sut = Solution().romanToInt("LVIII")
+        self.assertEqual(sut, 58)
+
+    def test_oneThousandNineHundredAndNinetyFour(self):
+        sut = Solution().romanToInt("MCMXCIV")
+        self.assertEqual(sut, 1994)

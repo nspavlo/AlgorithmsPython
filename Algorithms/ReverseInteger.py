@@ -13,8 +13,21 @@ class Solution:
             return j
 
 
-# given
-x = 1534236469
+import unittest
 
-# debug 9646324351
-print(Solution().reverse(x))
+class TestReverseInteger(unittest.TestCase):
+    def test_overflow(self):
+        sut = Solution().reverse(1534236469)
+        self.assertEqual(sut, 0)
+
+    def test_oneHundredAndTwentyThree(self):
+        sut = Solution().reverse(123)
+        self.assertEqual(sut, 321)
+
+    def test_minusOneHundredAndTwentyThree(self):
+        sut = Solution().reverse(-123)
+        self.assertEqual(sut, -321)
+
+    def test_zero(self):
+        sut = Solution().reverse(0)
+        self.assertEqual(sut, 0)
