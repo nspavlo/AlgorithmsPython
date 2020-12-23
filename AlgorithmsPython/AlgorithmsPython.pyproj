@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>b4b9eaab-d291-40dc-8ce5-e1eaafbef35f</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>AddTwoNumbers.py</StartupFile>
+    <StartupFile>ReverseInteger.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,6 +21,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="ReverseInteger.py" />
     <Compile Include="TwoSum.py" />
     <Compile Include="AddTwoNumbers.py" />
   </ItemGroup>
