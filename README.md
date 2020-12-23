@@ -1,5 +1,6 @@
 ## AlgorithmsPython
-Backup for my [LC](https://leetcode.com/) and [HR](https://www.hackerrank.com/) submissions
+🌀 Learning Algorithms + Python <BR>
+Backup for [LC](https://leetcode.com/) and [HR](https://www.hackerrank.com/) submissions
 
 ## Author
 
