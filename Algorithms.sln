@@ -1,9 +1,8 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "AlgorithmsPython", "AlgorithmsPython\AlgorithmsPython.pyproj", "{B4B9EAAB-D291-40DC-8CE5-E1EAAFBEF35F}"
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Algorithms", "Algorithms\Algorithms.pyproj", "{B4B9EAAB-D291-40DC-8CE5-E1EAAFBEF35F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
