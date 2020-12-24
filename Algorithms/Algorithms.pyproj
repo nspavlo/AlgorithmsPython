@@ -5,7 +5,7 @@
     <ProjectGuid>b4b9eaab-d291-40dc-8ce5-e1eaafbef35f</ProjectGuid>
     <ProjectHome>
     </ProjectHome>
-    <StartupFile>Leetcode\RomanToInteger.py</StartupFile>
+    <StartupFile>Leetcode\LongestCommonPrefix.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -25,6 +25,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Leetcode\LongestCommonPrefix.py" />
     <Compile Include="Leetcode\RomanToInteger.py" />
     <Compile Include="Leetcode\PalindromeNumber.py" />
     <Compile Include="Leetcode\ReverseInteger.py" />
