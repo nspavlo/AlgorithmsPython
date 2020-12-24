@@ -25,6 +25,8 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Goodrich\IsEven.py" />
+    <Compile Include="Goodrich\IsMultiple.py" />
     <Compile Include="Leetcode\LongestCommonPrefix.py" />
     <Compile Include="Leetcode\RomanToInteger.py" />
     <Compile Include="Leetcode\PalindromeNumber.py" />
@@ -33,6 +35,7 @@
     <Compile Include="Leetcode\AddTwoNumbers.py" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Goodrich\" />
     <Folder Include="Leetcode\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
