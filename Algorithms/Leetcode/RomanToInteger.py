@@ -1,7 +1,11 @@
+import unittest
+
+
 # https://leetcode.com/problems/roman-to-integer/
 
 class Solution:
-    def romanToInt(self, s: str) -> int:
+    @staticmethod
+    def roman_to_int(s: str) -> int:
         mapping = {
             "I": 1,
             "V": 5,
@@ -26,31 +30,29 @@ class Solution:
             else:
                 # add w/o change
                 tmp = val
-                
+
             otp += tmp
 
         return otp
 
 
-import unittest
-
 class TestRomanToInt(unittest.TestCase):
     def test_three(self):
-        sut = Solution().romanToInt("III")
+        sut = Solution.roman_to_int("III")
         self.assertEqual(sut, 3)
 
     def test_four(self):
-        sut = Solution().romanToInt("IV")
+        sut = Solution.roman_to_int("IV")
         self.assertEqual(sut, 4)
 
     def test_nine(self):
-        sut = Solution().romanToInt("IX")
+        sut = Solution.roman_to_int("IX")
         self.assertEqual(sut, 9)
 
-    def test_fiftyEight(self):
-        sut = Solution().romanToInt("LVIII")
+    def test_fifty_eight(self):
+        sut = Solution.roman_to_int("LVIII")
         self.assertEqual(sut, 58)
 
-    def test_oneThousandNineHundredAndNinetyFour(self):
-        sut = Solution().romanToInt("MCMXCIV")
+    def test_one_thousand_nine_hundred_and_ninety_four(self):
+        sut = Solution.roman_to_int("MCMXCIV")
         self.assertEqual(sut, 1994)

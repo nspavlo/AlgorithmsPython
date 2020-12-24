@@ -1,16 +1,20 @@
+import unittest
+
+
 # https://leetcode.com/problems/longest-common-prefix/
 
 class Solution:
-    def containsCommonPrefix(self, strs: [str], prefix: str) -> bool:
+    @staticmethod
+    def contains_common_prefix(strs: [str], prefix: str) -> bool:
         for str in strs:
             if not str.startswith(prefix):
                 return False
 
         return True
 
-    def longestCommonPrefix(self, strs: [str]) -> str:
+    def longest_common_prefix(self, strs: [str]) -> str:
         # check for empty list
-        if not strs: 
+        if not strs:
             return ""
 
         # raises index error when list is empty
@@ -18,7 +22,7 @@ class Solution:
 
         # reduce string by one and compare for common prefix
         while prefix:
-            if self.containsCommonPrefix(strs, prefix):
+            if self.contains_common_prefix(strs, prefix):
                 return prefix
             else:
                 prefix = prefix[:-1]
@@ -27,17 +31,15 @@ class Solution:
         return ""
 
 
-import unittest
-
 class TestLongestCommonPrefix(unittest.TestCase):
-    def test_itemsWithCommonPrefix(self):
-        sut = Solution().longestCommonPrefix(["flower", "flow", "flight"])
+    def test_items_with_common_prefix(self):
+        sut = Solution().longest_common_prefix(["flower", "flow", "flight"])
         self.assertEqual(sut, "fl")
 
-    def test_itemsWithoutCommonPrefix(self):
-        sut = Solution().longestCommonPrefix(["dog", "racecar", "car"])
+    def test_items_without_common_prefix(self):
+        sut = Solution().longest_common_prefix(["dog", "race car", "car"])
         self.assertEqual(sut, "")
 
-    def test_emptyList(self):
-        sut = Solution().longestCommonPrefix([])
+    def test_empty_list(self):
+        sut = Solution().longest_common_prefix([])
         self.assertEqual(sut, "")
