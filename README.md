@@ -12,6 +12,12 @@ pip install pre-commit
 pre-commit install
 ```
 
+## Tests
+
+```bash
+python -m unittest discover . "*.py"
+```
+
 ## Author
 
 👤 **Jans Pavlovs**
