@@ -10,6 +10,7 @@ def contains_common_prefix(strs: [str], prefix: str) -> bool:
 
     return True
 
+
 def longest_common_prefix(strs: [str]) -> str:
     # check for empty list
     if not strs:
