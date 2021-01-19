@@ -1,6 +1,9 @@
 import unittest
 
 
+# The binary search algorithm runs in O(logn) time for a sorted
+# sequence with n elements.
+
 def binary_search(data, target, low, high) -> int:
     if low > high:
         return None

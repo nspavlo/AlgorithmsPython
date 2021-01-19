@@ -1,6 +1,9 @@
 import unittest
 
 
+# Number of operations for computing factorial(n) is O(n),
+# as there are n + 1 activations, each of which accounts for O(1) operations.
+
 def factorial(n: int) -> int:
     if n == 0:
         return 1
